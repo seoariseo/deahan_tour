@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    vertical-align: text-top;
+    color: #333;
+    background-color: #fff;
+    font-family: Arial, "돋움", Helvetica, sans-serif;
+    font-size: 14px;
+    height: 10000px;
+}
+
+#wrap{
+    
+}
+
+#header{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+
+.head_inner{
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px #aaa;
+}
+
+.logo{}
+
+.nav{
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 1px -2px 10px #ddd;
+    border-radius: 10px 10px 0 0;
+    
+}
+.main > li{
+    position: relative;
+    width: 150px;
+    flex: 1 1 200px;
+}
+
+.main > li > a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.main > li:hover > a{
+    background-color: rgb(177, 225, 255);
+    border-radius: 10px 10px 0 0;
+}
+
+.sub{
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 70;
+}
+.sub li{
+    height: 50px;
+}
+.sub li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sub li:hover a{
+    background-color: rgb(163, 229, 255);
+}
+
+.sub_bg{
+    width: 1200px;
+    height: 200px;
+    background-color: rgba(219, 246, 255, 0.801);
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 40;
+    display: none;
+}
+
+#container{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.img_slide{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #aaa , -1px 1px 5px #aaa;
+}
+
+.top_move{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.top_move li{
+    width: 1200px;
+    height: 300px;
+}
+
+
+.top_move li a{}
+
+
+.top_move li a img{}
+
+
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius:10px;
+}
+.contents > div{
+    width: 390px;
+    height: 200px;
+    /* background-color: azure; */
+}
+.contents h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-bottom-color: white;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+}
+
+.contents ul{
+    width: 100%;
+    height: 170px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 10px 10px 10px ;
+    background-color: #fff;
+    box-shadow: 2px -1px 1px #ddd;
+    margin-top: 30px;
+}
+
+.notice ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.notice ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #ddd; */
+    
+}
+.notice ul li a{
+    width: 80%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.notice ul li span{
+    width: 20%;
+    text-align: right;
+}
+
+.gallery{}
+.gallery ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.gallery ul li{}
+.gallery ul li a{}
+.gallery ul li a img{}
+
+
+.baro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 0 1px #ddd;
+}
+
+.baro p{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baro img{
+    width: 100%;
+    height: 150px;
+}
+
+
+
+#footer{
+    width: 1200px;
+    height: 100px;
+    margin: 20px auto;
+    /* background-color: lightblue; */
+    clear: both;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 2px 2px #aaa;
+}
+
+.f_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.copy{
+    width: 70%;
+    /* background-color: lightcyan; */
+    /* text-indent: 50px; */
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.f_right{
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    /* background-color: lightgoldenrodyellow; */
+}
+.sns{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /* background-color: lime; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sns a{
+    display: block;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+}
+
+.sns_f{
+    width: 46px;
+    height: 45px;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+    background-position: -94px -17px;
+}
+
+.sns_i{
+    width: 46px;
+    height: 45px;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+    background-position: -22px -17px;
+}
+
+.sns_t{
+    width: 46px;
+    height: 45px;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+    background-position: -164px -17px;
+}
+.sns_k{
+    width: 46px;
+    height: 45px;
+    background-image: url(../images/sns.png);
+    background-repeat: no-repeat;
+    background-position: -164px -101px;
+}
+.family{
+    height: 50px;
+    line-height: 50px;
+    /* background-color: yellow; */
+}
+
+.family select{
+    height: 30px;
+    width: 120px;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #aaaaaa96;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    display: none;
+}
+
+.pop{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 10px double dodgerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 70;
+    padding: 20px;
+    display: none;
+}
+
+
+.pop h3{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px;
+    border-bottom: dodgerblue 10px double;
+}
+
+.pop p{
+    text-align: justify;
+    line-height: 2;
+}
+
+.pop p::first-letter{
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+}
